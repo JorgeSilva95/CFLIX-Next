@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "name": "cflix-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeSilva95/CFLIX-Next.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeSilva95/CFLIX-Next/issues"
+  },
+  "homepage": "https://github.com/JorgeSilva95/CFLIX-Next#readme",
+  "description": ""
+}
