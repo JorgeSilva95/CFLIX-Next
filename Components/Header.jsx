@@ -33,6 +33,7 @@ function Header(props) {
 
       <div className={Headerr.secondaryNavigation}>
         <button
+          type="submit"
           className={Headerr.cbListRgt}
           onClick={() => {
             props.clkSearch();
@@ -41,13 +42,15 @@ function Header(props) {
           <BiSearch className={Headerr.btns} />
         </button>
         <input
+          type="search"
+          id="gsearch"
+          name="gsearch"
           onChange={(e) => {
             props.gtSearch(e.target.value);
           }}
-          type="search"
-          id="pesquisa"
           placeholder="Buscar..."
-        />
+        ></input>
+
         <ul className={Headerr.cbListRgt}>
           <a href="">Infantil</a>
         </ul>
