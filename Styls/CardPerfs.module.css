@@ -1,0 +1,30 @@
+.cardPerfs {
+  text-align: center;
+}
+
+.cardPerfs > h1 {
+  color: var(--with-0);
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.perfsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.btnPadrao {
+  border-style: solid;
+  border-width: 1px;
+  color: var(--cinz-20);
+  background-color: transparent;
+  border-color: var(--cinz-10);
+  padding: 5px 26px;
+}
+
+.btnPadrao:hover {
+  border-style: solid;
+  border-color: var(--with-0);
+  border-width: 1px;
+  color: var(--with-100);
+}

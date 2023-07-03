@@ -1,5 +1,7 @@
+import CardPerfs from "../Components/CardPerfs";
+
 function index() {
-  return <div>Seja Bem-Vindo!!</div>;
+  return <CardPerfs />;
 }
 
 export default index;

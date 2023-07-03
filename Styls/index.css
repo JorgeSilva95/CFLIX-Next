@@ -1,0 +1,42 @@
+:root {
+  --cinz-25: #141414;
+  --cinz-500: #7c7c7c;
+  --red-100: #ca0000;
+  --cinz-200: #e6e6e6;
+  --with-100: #e5e5e5;
+  --cinz-10: #515151;
+  --cinz-20: #666666;
+  --cinz-100: rgb(17, 17, 17);
+  --with-0: white;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--cinz-200);
+}
+body {
+  background-color: var(--cinz-100);
+}
+
+a,
+a:link,
+a:visited {
+  transition: 0.2s;
+  color: var(--whit-0) !important;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--cinz-500) !important;
+  text-decoration: none;
+}
+
+button {
+  border-style: none;
+  background-color: transparent;
+}
+p {
+  color: var(--cinz-10);
+  font-weight: 400;
+  font-size: 18px;
+}
