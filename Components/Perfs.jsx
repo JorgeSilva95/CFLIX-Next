@@ -17,11 +17,7 @@ export default function Perfs() {
           }}
         >
           <img srcSet={url} alt="Perfil" />
-          <p>
-            {namesLs.map((usuario) => (
-              <li key={usuario.id}>{usuario.Users}</li>
-            ))}
-          </p>
+          <p>perfil</p>
         </button>
       </Link>
       <BiLock className={Perfss.lockIcon} />
