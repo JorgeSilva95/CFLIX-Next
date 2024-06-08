@@ -3,7 +3,7 @@
 }
 
 .cardPerfs > h1 {
-  color: var(--with-0);
+  color: var(--white-0);
   font-size: 3rem;
   font-weight: normal;
 }
@@ -24,7 +24,7 @@
 
 .btnPadrao:hover {
   border-style: solid;
-  border-color: var(--with-0);
+  border-color: var(--white-0);
   border-width: 1px;
-  color: var(--with-100);
+  color: var(--white-100);
 }
