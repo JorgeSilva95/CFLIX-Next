@@ -34,13 +34,13 @@
 
 .perfCard > a > button:hover > img {
   border-style: solid;
-  border-color: var(--with-100);
+  border-color: var(--white-100);
   border-width: 3px;
 }
 
 .perfCard > a > button:hover > p {
   border-width: 3px;
-  color: var(--with-100);
+  color: var(--white-100);
 }
 
 .perfCard > a > button > p {
