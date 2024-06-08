@@ -15,6 +15,9 @@ h1 {
 }
 body {
   background-color: var(--cinz-100);
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0px;
 }
 
 a,

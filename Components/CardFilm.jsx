@@ -3,8 +3,8 @@ import styles from "../Styles/CardFilm.module.css";
 import Img from "../DB/Imgs/Unknow.png";
 
 export function CardFilm({ film, imageFilm }) {
-    if (film.overview.length > 450) {
-      film.overview = film.overview.slice(0, 450) + "...";
+    if (film.overview.length > 400) {
+      film.overview = film.overview.slice(0, 400) + "...";
     }
   return (
     <div>

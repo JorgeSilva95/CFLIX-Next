@@ -8,6 +8,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border-width: 1px;
+  border-style: solid;
+  transition: 0.3s;
+}
+
+.cardFilm:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  border-color: var(--cinz-10);
 }
 
 .cardFilmTitle {
@@ -19,6 +28,7 @@
 .cardFilm > img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 

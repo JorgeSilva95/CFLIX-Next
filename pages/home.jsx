@@ -14,15 +14,17 @@ function login(props) {
   };
 
   const clkSearch = () => {
-    apiSearc
-      .get(
-        "https://api.themoviedb.org/3/search/movie?api_key=e68b6243bee88c674c06b447bb15c094&language=pt-BR&query=" +
-          Film
-      )
-      .then((response) => setSearchFilms(response.data.results))
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
+    if (searchFilms != undefined && Film) {
+      apiSearc
+        .get(
+          "https://api.themoviedb.org/3/search/movie?api_key=e68b6243bee88c674c06b447bb15c094&language=pt-BR&query=" +
+            Film
+        )
+        .then((response) => setSearchFilms(response.data.results))
+        .catch((err) => {
+          console.error("ops! ocorreu um erro" + err);
+        });
+    }
   };
 
   useEffect(() => {
@@ -40,7 +42,7 @@ function login(props) {
   return (
     <div className="App">
       <Header getSearch={getSearch} clkSearch={clkSearch} />
-      <Scop Film={Film} searchFilms={searchFilms} />
+      {searchFilms.length > 0 ? <Scop Film={Film} searchFilms={searchFilms} /> : <><h1 style={{ color: "red",  textAlign:"center"}}>Informe um Filme valido!</h1></>}
       {/* <Login /> */}
     </div>
   );
