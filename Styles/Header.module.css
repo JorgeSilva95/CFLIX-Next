@@ -27,14 +27,28 @@
 }
 
 .cbList {
-  color: var(--whit-0);
+  color: var(--white-0);
+  padding: 0px;
+  margin: 0.6rem;
+  height: 1.2rem;
+}
+
+.cbList > a {
+  color: var(--white-0);
+  padding: 0px;
+  margin: 0.6rem;
+  height: 1.2rem;
+}
+
+.cbListRgt > a {
+  color: var(--white-0);
   padding: 0px;
   margin: 0.6rem;
   height: 1.2rem;
 }
 
 .cbListRgt {
-  color: var(--whit-0);
+  color: var(--white-0);
   padding: 0px;
   margin: 0.6rem;
   height: 1.2rem;

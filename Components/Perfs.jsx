@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Perfss from "../Styls/Perfs.module.css";
+import Perfss from "../Styles/Perfs.module.css";
 import { BiLock } from "react-icons/bi";
 import DBn from "../DB/DB.json";
 import url from "../DB/Imgs/Perfil1.png";

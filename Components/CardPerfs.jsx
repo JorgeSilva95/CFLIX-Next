@@ -1,4 +1,4 @@
-import CardPerfss from "../Styls/CardPerfs.module.css";
+import CardPerfss from "../Styles/CardPerfs.module.css";
 import Perfs from "./Perfs";
 
 function CardPerfs() {

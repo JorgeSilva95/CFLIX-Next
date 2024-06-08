@@ -39,6 +39,7 @@ function login(props) {
   console.log(Film.title); */
   return (
     <div className="App">
+      <Header getSearch={getSearch} clkSearch={clkSearch} />
       <Scop Film={Film} searchFilms={searchFilms} />
       {/* <Login /> */}
     </div>
