@@ -1,0 +1,49 @@
+.cardFilm {
+  width: 20rem;
+  height: 50rem;
+  background-color: rgb(44, 41, 41);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cardFilmTitle {
+  color: var(--white-100);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.cardFilm > img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cardFilmDate {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  color: var(--white-100);
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.cardFilmDesc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+
+  color: var(--white-100);
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: 400;
+  height: fit-content;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.5rem;
+}
