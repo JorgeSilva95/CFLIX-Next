@@ -3,6 +3,9 @@ import styles from "../Styles/CardFilm.module.css";
 import Img from "../DB/Imgs/Unknow.png";
 
 export function CardFilm({ film, imageFilm }) {
+    if (film.overview.length > 450) {
+      film.overview = film.overview.slice(0, 450) + "...";
+    }
   return (
     <div>
       <div className={styles.cardFilm}>
@@ -21,7 +24,7 @@ export function CardFilm({ film, imageFilm }) {
             day: "numeric",
           })}
         </p>
-
+          
         <p className={styles.cardFilmDesc}>{film.overview}</p>
       </div>
     </div>
