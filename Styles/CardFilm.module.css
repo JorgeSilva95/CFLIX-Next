@@ -16,7 +16,7 @@
 .cardFilm:hover {
   cursor: pointer;
   transition: 0.3s;
-  border-color: var(--cinz-10);
+  border-color: var(--gray-400);
 }
 
 .cardFilmTitle {
