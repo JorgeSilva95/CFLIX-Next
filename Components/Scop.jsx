@@ -9,15 +9,8 @@ function Scop({searchFilms}) {
     <div className= {Styles.Container}>
       <div className={Styles.ContainerCardFilms}>
         {searchFilms.map((film) => (
-          <CardFilm film={film} imageFilm={film.backdrop_path ? IMG + film.backdrop_path : ""} />
+          <CardFilm key={film.id} film={film} imageFilm={film.backdrop_path ? IMG + film.backdrop_path : ""} />
         ))}
-        {/* 
-      <div>{props.Film}</div>
-      <div>
-        <img src="" alt="" srcset={IMG + props.poster_path} />
-        {props.date}
-      </div>
-      <div>{props.detalhs}</div> */}
       </div>
     </div>
   );

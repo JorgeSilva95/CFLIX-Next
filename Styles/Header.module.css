@@ -1,40 +1,17 @@
-.logo {
-  margin: 0;
-  color: var(--red-100);
-  padding-top: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
+@media screen and (max-width: 1020px) {
+  #HeaderMenuPC {
+    display: none;
+  }
+  #HeaderMenuMobile {
+    display: block;
+  }
 }
 
-.cbList {
-  color: var(--white-0);
-  padding: 0px;
-  margin: 0.6rem;
-  height: 1.2rem;
-}
-
-.cbList > a {
-  color: var(--white-0);
-  padding: 0px;
-  margin: 0.6rem;
-  height: 1.2rem;
-}
-
-.cbListRgt > a {
-  color: var(--white-0);
-  padding: 0px;
-  margin: 0.6rem;
-  height: 1.2rem;
-}
-
-.cbListRgt {
-  color: var(--white-0);
-  padding: 0px;
-  margin: 0.6rem;
-  height: 1.2rem;
-}
-
-.btns {
-  width: 1.5rem;
-  height: 1.5rem;
+@media screen and (min-width: 1020px) {
+  #HeaderMenuMobile {
+    display: none;
+  }
+  #HeaderMenuPC {
+    display: block;
+  }
 }

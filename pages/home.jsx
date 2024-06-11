@@ -42,7 +42,7 @@ function login(props) {
   return (
     <div className="App">
       <Header getSearch={getSearch} clkSearch={clkSearch} />
-      {searchFilms.length > 0 ? <Scop Film={Film} searchFilms={searchFilms} /> : <><h1 style={{ color: "red",  textAlign:"center"}}>Informe um Filme valido!</h1></>}
+      {searchFilms.length > 0 ? <Scop Film={Film} searchFilms={searchFilms} /> : <><h1 style={{ color: "red",  textAlign:"center"}}>Filme não encontrado!</h1></>}
       {/* <Login /> */}
     </div>
   );

@@ -1,0 +1,29 @@
+.headerContainer {
+  width: 100%;
+  height: max-content;
+  background-color: var(--gray-500);
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerContainer .Header {
+  width: 100%;
+}
+.headerContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  font-size: larger;
+  padding: 1.5rem;
+}
+.headerContainer input {
+  width: 100%;
+  padding: 1rem;
+}
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+}

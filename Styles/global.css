@@ -42,7 +42,7 @@ a,
 a:link,
 a:visited {
   transition: 0.2s;
-  color: var(--whit-0) !important;
+  color: var(--white-0) !important;
   text-decoration: none;
 }
 
@@ -52,12 +52,28 @@ a:active {
   text-decoration: none;
 }
 
+input {
+  border-style: none;
+  background-color: var(--gray-400);
+  color: var(--white-0);
+  padding: 6px;
+  border-radius: 4px;
+}
+
 button {
   border-style: none;
-  background-color: transparent;
+  background-color: var(--gray-400);
+  color: var(--white-0);
+  padding: 6px;
+  border-radius: 4px;
+  width: 9rem;
 }
-p {
-  color: var(--gray-400);
-  font-weight: 400;
-  font-size: 18px;
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--gray-300);
+}
+
+button:active {
+  background-color: var(--gray-200);
 }
