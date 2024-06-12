@@ -28,7 +28,7 @@ export function HeaderMenuMobile({ getSearch, clkSearch }) {
               </a>
               <form
                 className={Styles.headerSearch}
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={(e) => e.preventDefault() setIsOpen(false)}
               >
                 <input
                   placeholder="Buscar"
