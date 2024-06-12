@@ -50,7 +50,7 @@ export function HeaderMenuMobile({ getSearch, clkSearch }) {
 /*
 <form
         className={Styles.headerSearch}
-        onSubmit={(e) => e.preventDefault() isOpen=false}
+        onSubmit={(e) => { e.preventDefault() isOpen=false }}
       >
         <input
           placeholder="Buscar"
