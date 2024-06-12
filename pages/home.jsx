@@ -1,4 +1,4 @@
-import { api, apiSearc } from "../Api/api";
+import { api, apiSearch, token } from "../Api/api";
 import Header from "../Components/Header";
 import { useState, useEffect } from "react";
 import Scop from "../Components/Scop.jsx";
@@ -15,9 +15,9 @@ function login(props) {
 
   const clkSearch = () => {
     if (searchFilms != undefined && Film) {
-      apiSearc
+      apiSearch
         .get(
-          "https://api.themoviedb.org/3/search/movie?api_key=e68b6243bee88c674c06b447bb15c094&language=pt-BR&query=" +
+          "https://api.themoviedb.org/3/search/multi?api_key=" + token + "&language=pt-BR&query=" +
             Film
         )
         .then((response) => setSearchFilms(response.data.results))

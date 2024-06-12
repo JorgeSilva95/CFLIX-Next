@@ -1,27 +1,30 @@
 import axios from "axios";
 
+const baseURL = "https://api.themoviedb.org/3/movie/";
+const searchURL = "https://api.themoviedb.org/3/search/movie?";
+const token = "e68b6243bee88c674c06b447bb15c094";
+
 const api = axios.create({
-  baseURL: "https://api.themoviedb.org/3/movie/",
+  baseURL: baseURL,
 });
 
-const apiSearc = axios.create({
-  baseURL: "https://api.themoviedb.org/3/search/movie?",
+const apiSearch = axios.create({
+  baseURL: searchURL,
 });
 
-apiSearc.interceptors.request.use(async (config) => {
-  const token = "e68b6243bee88c674c06b447bb15c094";
+apiSearch.interceptors.request.use(async (config) => {
   if (token) {
-    apiSearc.defaults.headers.authorization = `Bearer ${token}`;
+    apiSearch.defaults.headers.common["Authorization"] = `Bearer ${token}`;
   }
   return config;
 });
 
 api.interceptors.request.use(async (config) => {
-  const token = "e68b6243bee88c674c06b447bb15c094";
   if (token) {
-    api.defaults.headers.authorization = `Bearer ${token}`;
+    api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
   }
   return config;
 });
 
-export { api, apiSearc };
+export { api, apiSearch, token };
+

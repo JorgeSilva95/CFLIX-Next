@@ -11,6 +11,7 @@
   width: 100%;
 }
 .headerContainer button {
+  border-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +21,7 @@
   padding: 1.5rem;
 }
 .headerContainer input {
+  border-radius: 0px;
   width: 100%;
   padding: 1rem;
 }
